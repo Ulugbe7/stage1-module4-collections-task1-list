@@ -7,7 +7,7 @@ public class ArrayListCreator {
     public ArrayList<String> createArrayList(List<String> sourceList) {
         ArrayList<String> mList = new ArrayList<>();
         for (int i = 0; i < sourceList.size(); i++) {
-            if (i % 2 == 0) {
+            if ((i + 1) % 3 == 0) {
                 mList.add(sourceList.get(i));
                 mList.add(sourceList.get(i));
             }
